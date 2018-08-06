@@ -1,0 +1,7 @@
+bin
+.vscode
+!src/
+src/*
+!src/github.com/
+src/github.com/*
+!src/github.com/user
