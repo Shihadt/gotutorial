@@ -5,6 +5,4 @@ src/*
 !src/github.com/
 src/github.com/*
 !src/github.com/user
-!*.go
-!*.a
 

@@ -10,22 +10,6 @@ import (
 )
 
 func main() {
-	c := make(chan string)
-	for i := 0; i < 5; i++ {
-		go test(c)
-	}
-
-	for i := 0; i < 5; i++ {
-		fmt.Println(i, " : channel: ", <-c)
-	}
-}
-
-func test(c chan string) {
-	var i int
-	fmt.Scanf("%d", &i)
-	c <- strconv.Itoa(i)
-}
-func myMain() {
 	filename := flag.String("file", "problems.csv", "set File to read")
 	//duration := flag.Duration("time", 30*time.Second, "Sets time duration")
 	flag.Parse()
